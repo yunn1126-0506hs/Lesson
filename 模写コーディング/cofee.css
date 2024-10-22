@@ -1,0 +1,22 @@
+/*ヘッダー*/
+ul{
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+li{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.flexbox-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* company見出し */
+.company{
+  display: flex;
+}
+.h3{
+  border-top: solid 3px black;
+}
