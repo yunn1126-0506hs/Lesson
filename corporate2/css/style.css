@@ -1,0 +1,110 @@
+html {
+  font-size: 100%;
+}
+
+body{
+  background-color: #f0f0f0;
+  color: #000;
+  font-size: 0.875rem;
+}
+
+/* リストマーカー非表示 */
+li{
+  list-style-type: none;
+}
+/* リンク下線無し */
+a {
+  color: #000;
+  font-size:0.875rem;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+/* リンクの文字色そのまま */
+a,a:hover,a:visited{
+  color: inherit;
+}
+
+/* ヘッダー横並び */
+#header{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.navi-item{
+  margin-right: 20px;
+}
+
+.logo{
+  width: 100%;
+  width: 100px;
+  margin: 0 40px;
+}
+.section-title {
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 50px;
+}
+
+/* 擬似要素を使って下線を引く */
+.section-title::after{
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  display: block;
+}
+
+/* 「display: inline-block;」を設定してブロック化することで、
+改行されてmargin-bottomが使用できるようになる */
+
+.section-title .en{
+  display: block;
+  font-size: 2.25rem;
+  letter-spacing: 0.3em;
+  margin-bottom: 10px;
+}
+
+.section-title .ja{
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+
+}
+
+/* お問い合わせ */
+.contact {
+  background-color: #000;
+  color: #f0f0f0 !important;
+  width: 200px;
+  height: 80px;
+  display: inline-block;
+  text-align: center;
+}
+
+/*＊＊＊＊＊＊＊＊＊＊＊＊＊＊ーーーーーーーーーーーメインビジュアルーーーーーーーーーー*＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/
+#mainvisual {
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+#mainvisual img {
+  width: 100%;
+  height: calc(100vh-80px);
+  /* 高さを固定したまま画像を拡大縮小 */
+  object-fit: cover;
+}
+
+/*＊＊＊＊＊＊＊＊＊＊＊＊＊＊ーーーーーーーーーーーニュースセクションーーーーーーーーーー*＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/
